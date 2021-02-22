@@ -20,6 +20,8 @@ export default function Post({ postData }) {
   );
 }
 export async function getStaticPaths() {
+  console.log(process.cwd());
+  console.log(__dirname);
   const paths = getAllPostsIds();
   return {
     paths,
