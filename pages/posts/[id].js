@@ -23,6 +23,7 @@ export async function getStaticPaths() {
   console.log(process.cwd());
   console.log(__dirname);
   const paths = getAllPostsIds();
+  console.log(paths);
   return {
     paths,
     fallback: false,
